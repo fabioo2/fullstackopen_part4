@@ -1,8 +1,9 @@
 POST http://localhost:3003/api/blogs/
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYmlvIiwiaWQiOiI2MGRhYTAwMTdhNDc5YzU5ODRiYTYxNjMiLCJpYXQiOjE2MjQ5NDA2MjQsImV4cCI6MTYyNDk0NDIyNH0.X8fs_xbXAwDFktyUNOUzSDL2fUx0wWZ1YH4S4wXtEz8
 
 {
-    "url": "pizzabio.com",
-    "title": "hello world",
+    "url": "coolbio.com",
+    "title": "Another blog to see what the array looks like",
     "author": "Fabio Kim"
 }
