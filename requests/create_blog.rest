@@ -1,9 +1,9 @@
 POST http://localhost:3003/api/blogs/
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYmlvIiwiaWQiOiI2MGRhYTAwMTdhNDc5YzU5ODRiYTYxNjMiLCJpYXQiOjE2MjQ5NDA2MjQsImV4cCI6MTYyNDk0NDIyNH0.X8fs_xbXAwDFktyUNOUzSDL2fUx0wWZ1YH4S4wXtEz8
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYmlvIiwiaWQiOiI2MGRhYTAwMTdhNDc5YzU5ODRiYTYxNjMiLCJpYXQiOjE2MjU1MDk1NjcsImV4cCI6MTYyNTUxMzE2N30.NUioEhVAMyZck7Cbb4LNefRZTe3Rv61LpL6Aa3iG7SI
 
 {
-    "url": "coolbio.com",
-    "title": "Another blog to see what the array looks like",
+    "url": "cool cool!!",
+    "title": "this is a post where user data is coming from request.user",
     "author": "Fabio Kim"
 }
