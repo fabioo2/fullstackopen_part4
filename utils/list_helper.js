@@ -1,7 +1,7 @@
-const { keyBy } = require('lodash');
+// const { keyBy } = require('lodash');
 const _ = require('lodash');
 
-const dummy = (blogs) => {
+const dummy = () => {
     return 1;
 };
 
@@ -24,9 +24,7 @@ const favoriteBlog = (blogs) => {
 };
 
 const mostBlogs = (blogs) => {
-    const picked = _.map(blogs, (o) =>
-        _.omit(o, ['_id', 'likes', 'url', '__v'])
-    );
+    const picked = _.map(blogs, (o) => _.omit(o, ['_id', 'likes', 'url', '__v']));
 
     const result = _(picked)
         .groupBy((x) => x.author)
@@ -44,9 +42,7 @@ const mostBlogs = (blogs) => {
 };
 
 const mostLikes = (blogs) => {
-    const picked = _.map(blogs, (o) =>
-        _.omit(o, ['_id', 'title', 'url', '__v'])
-    );
+    const picked = _.map(blogs, (o) => _.omit(o, ['_id', 'title', 'url', '__v']));
 
     const summed = _(picked)
         .groupBy('author')

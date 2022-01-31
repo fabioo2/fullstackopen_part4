@@ -6,16 +6,16 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         required: true,
-        minLength: 3
+        minLength: 3,
     },
     name: String,
     passwordHash: String,
     blogs: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'Blog'
-        }
-    ]
+            ref: 'Blog',
+        },
+    ],
 });
 
 userSchema.set('toJSON', {
@@ -24,7 +24,7 @@ userSchema.set('toJSON', {
         delete returnedObject._id;
         delete returnedObject.__v;
         delete returnedObject.passwordHash;
-    }
+    },
 });
 
 userSchema.plugin(uniqueValidator);
